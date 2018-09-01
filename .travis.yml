@@ -1,2 +1,8 @@
 language: node_js
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.4
+cache:
+  yarn: true
+  directories:
+    - node_modules
 script: yarn build
